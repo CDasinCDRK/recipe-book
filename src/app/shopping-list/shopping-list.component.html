@@ -1,7 +1,11 @@
 <div class="row">
   <div class="col-xs-10">
+    <h3> Edit: </h3>
     <app-add-item></app-add-item>
     <hr>
+    <h3>Shopping List: </h3>
+    <i> Click on items to edit them</i>
+    <br> <br>
     <ul class="list-group">
     <a 
       class="list-group-item" 
@@ -11,5 +15,6 @@
       {{ ingredient.name }} ({{ ingredient.amount }}) 
     </a>
     </ul>
+    <button class="btn btn-primary" onclick="window.print();return false;">Print</button>
   </div>
 </div>

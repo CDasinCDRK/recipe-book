@@ -4,7 +4,6 @@ import { Subject } from 'rxjs';
 import { Recipe } from './recipe.model'
 import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
-import { indexDebugNode } from '@angular/core/src/debug/debug_node';
 
 @Injectable()
 export class RecipeService {
@@ -26,7 +25,7 @@ export class RecipeService {
         ]),
         new Recipe(
             'Super Salad',
-            'Healthy, but super yummy!', 
+            'A salad that actually tastes good!', 
             'https://img.taste.com.au/CCQsxomy/w643-h428-cfill-q90/taste/2016/11/asian-style-chopped-salad-83466-1.jpeg',
         [
             new Ingredient('Head of Lettuce', 1), 
